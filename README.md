@@ -15,4 +15,6 @@ There are two basic usage modes:
 
 ## Animation defined by multiple directive inputs
 
-`<button (click)="apiDataPromise = getApiData()" [animatedPromise]="apiDataPromise" [animateProperty]="'background-color'" [startValue]="rgba(0,0,0,0)" [finishValue]="rgba(0,0,0,1)" [duration]="1000">Click me!</button>`
+`<button (click)="apiDataPromise = getApiData()" [animatedPromise]="apiDataPromise" [animateProperty]="'backgroundColor'" [startValue]="rgba(0,0,0,0)" [finishValue]="rgba(0,0,0,1)" [duration]="1000">Click me!</button>`
+
+Note that because this uses the WebAnimations API, CSS properties are written in camelCase (e.g. backgroundColor instead of background-color).
